@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site de recttte (en développement)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=devide-width, initial-scale=1.0"> -->
+	<script src="https://kit.fontawesome.com/08e45d7ae4.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"/>
+</head>
+<body>
+
+
+  <div class="hero">
+    <!-- <nav>
+      <h2 class="logo">Portf<span>olio</span></h2>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">A propos de moi</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Compétences</a></li>
+        <li><a href="#">Contacter moi</a></li>
+      </ul> 
+    </nav> -->
+
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <h2 class="logo">Portf<span>olio</span></h2>
+      <ul class="haut">
+        <li class="bar"><a class="active abc" href="#">Accueil</a> </li>
+        <li class="bar"><a class="abc" href="#">A propos de moi</a></li>
+        <li class="bar"><a class="abc" href="#">Services</a></li>
+        <li class="bar"><a class="abc" href="#">Compétences</a></li>
+        <li class="bar"><a class="abc" href="#">Contacter moi</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h4>Hey, moi c'est</h4>
+      <h1>Arnaud BASTIEN</h1>
+      <h3>Je suis un graphiste et infographiste</h3>
+      
+    </div>
+
+  </div>
+
+	<!-- <div class="slider">
+		<div class="slides">
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+			
+
+			
+			<div class="slide">
+				<img src="images/recette5.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="images/recette2.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="images/recette3.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="images/recette4.jpg" alt="">
+			</div>
+			
+
+			
+			<div class="navigation-auto">
+				<div class="auto-btn1"></div>
+				<div class="auto-btn2"></div>
+				<div class="auto-btn3"></div>
+				<div class="auto-btn4"></div>
+			</div>
+			
+		</div>
+		
+		<div class="navigation-manual">
+			<label for="radio1" class="manual-btn"></label>
+			<label for="radio2" class="manual-btn"></label>
+			<label for="radio3" class="manual-btn"></label>
+			<label for="radio4" class="manual-btn"></label>
+		</div>
+		
+	</div> -->
+
+
+	<div class="principale">
+	<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="images/images1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/images2.png" alt="">
+        </div>
+        <div class="slide second">
+          <img src="images/images3.2.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/images4.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+    </div>
+
+
+    <script type="text/javascript">
+    	var counter = 1;
+    	setInterval(function(){
+    		document.getElementById('radio' + counter).checked = true;
+    		counter++;
+    		if(counter > 4){
+    			counter = 1;
+    		}
+    	}, 2500);
+
+    </script>
+</body>
+</html>
