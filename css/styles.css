@@ -318,7 +318,7 @@ div.principale::before{
 }
 
 div.principale{
-	height: 100vh;
+	height: 578px;
   /*display: flex;
   justify-content: center;
   align-items: center;*/
@@ -463,7 +463,7 @@ div.principale{
 
 
 .about{
-	height: 90vh;
+	height: 550px;
 	width: 100%;
 	padding: 25px 0px;
 	background-color: #191919;
@@ -574,7 +574,7 @@ button:hover{
 
 
 div.service{
-	height: 200vh;
+	height: 700px;
 	background: #101010;
 	width: 100%;
 	padding: 100px 0px;
@@ -594,7 +594,7 @@ h2.test{
 }
 div.card{
 	/*height: 365px;*/
-	height: 400px;
+	height: 275px;
 	width: 280px;
 	padding: 20px 35px;
 	background: #191919;
@@ -608,16 +608,18 @@ div.card{
 	font-size: 50px;
 	display: block;
 	text-align: center;
-	margin: 25px 0px;
+	margin: 5px 0px;
 	color: #f9004d;
 
 }
-h5{
+h5.contents{
 	color: white;
 	font-size: 23px;
-	margin-bottom: 15px;
-	/*text-align: center;
-	justify-content: center;*/
+	margin-bottom: 5px;
+	margin-top: 20px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
 }
 .pra p.service{
 	color: #fcfc;
@@ -637,9 +639,30 @@ h5{
 	border: 2px solid transparent;
 	font-weight: bold;
 	padding: 9px 22px;
+	/*padding: 5px 15px;*/
 	border-radius: 30px;
 	transition: .4s; 
-	margin-top: 0px;
+/*	margin-top: 50px;*/
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.buttons{
+	margin-top: 50px;
+}
+
+.card .buttons{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
 }
 
 .card .button:hover{
@@ -656,6 +679,18 @@ i.fa-solid.fa-gif{
 	color: #f9004d;
 }
 
+@media screen and (max-width: 740px){
+	.button.z{
+		margin-top: -20px;
+	}
+}
+
+@media screen and (max-width: 665px){
+	.button.y{
+		margin-top: -20px;
+	}
+}
+
 
 @media screen and (max-width: 900px){
 	.pra p.service{
@@ -666,11 +701,16 @@ i.fa-solid.fa-gif{
 		font-size: 17px;
 	}
 	.card .button{
-		padding: 5px 15px;
+		padding: 5px -40px;
+		width: 50px;
+		font-size: 10px;
+	}
+	span.tests{
+		display: none;
 	}
 }
 
-@media screen and (max-width: 700px){
+/*@media screen and (max-width: 700px){
 	.box{
 		display: block;
 		align-items: center;
@@ -686,7 +726,7 @@ i.fa-solid.fa-gif{
 		align-items: center;
 		justify-content: center;
 	}
-}
+}*/
 
 
 
@@ -768,7 +808,7 @@ div.ex{
 
 
 section.crea{
-	height: 1100px;
+	height: 1350px;
 }
 
 div.creas{
@@ -788,13 +828,13 @@ h4.titre-creas{
 
 img.logo{
 	width: 300px;
-	height: 300px;
+	height: 280px;
 	
 }
 
 img.ident{
 	width: 200px;
-	height: 400px;
+	min-height: 422px;
 }
 
 div.exe{
@@ -847,4 +887,14 @@ div.exe{
 		height: 250px;
 		/*display: block;*/
 	}
+	section.crea{
+		height: 1150px;
+	}
+}
+
+
+a{
+	list-style: none;
+	text-decoration: none;
+	color: white;
 }
