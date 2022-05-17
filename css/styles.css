@@ -3,6 +3,7 @@
 	margin: 0;*/
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
+	
 }
 
 
@@ -123,7 +124,7 @@ ul.haut{
 
 nav{
   background: black;
-  opacity: 0.8;
+  opacity: 0.8/*1*/;
   height: 80px;
   width: 100%;
   position: fixed;
@@ -358,6 +359,7 @@ div.principale{
   width: 500%;
   height: 500px;
   display: flex;
+  margin-top: 79px;
 }
 
 .slides input{
@@ -366,15 +368,17 @@ div.principale{
 
 .slide{
   width: 20%;
-  transition: 2s;
 
+  transition: 2s;
+  /*margin-top: 80px;*/
  
   z-index: -100;
 }
 
 .slide img{
   width: 100%;
-  height: 615px;
+/*  height: 615px;*/
+	height: 100%;
 }
 
 /*css for manual slide navigation*/
@@ -382,7 +386,7 @@ div.principale{
 .navigation-manual{
   position: absolute;
   width: 100%;
-  margin-top: 30px;
+  margin-top: -50px;
   display: flex;
   justify-content: center;
 }
@@ -426,7 +430,7 @@ div.principale{
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	margin-top: 530px;
+	margin-top: 450px;
 }
 
 .navigation-auto div{
@@ -832,9 +836,15 @@ img.logo{
 	
 }
 
+img.logo.l{
+	width: 300px;
+	height: 250px;
+	
+}
+
 img.ident{
 	width: 200px;
-	min-height: 422px;
+	min-height: 450px;
 }
 
 div.exe{
